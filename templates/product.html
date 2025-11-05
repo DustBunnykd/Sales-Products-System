@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}
+Add New Product
+{% endblock %}
+{% block content %}
+        <form action="{{ url_for('addrec') }}" method="POST">
+            <h3>Please Add the New Product Information:</h3>
+            Name<br>
+            <input type="text" name="name" /><br>
+
+            Price<br>
+            <textarea name="price"></textarea><br>
+
+            Quantity<br>
+            <input type="text" name="quantity" /><br>
+            sku_no<br>
+            <input type="text" name="sku_no" /><br>
+
+            <input type="submit" value="Submit" /><br>
+        </form>
+{% endblock %}
